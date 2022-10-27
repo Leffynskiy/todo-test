@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>TODO listik</title>
+	<link rel="stylesheet" href="b.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+	<script src="c.js"></script>
+</head>
+<body>
+	<main class="app">
+		<section class="greeting">
+			<h2 class="title">
+				hi <input type="text" id="name" placeholder="Name here" />
+			</h2>
+		</section>
+		
+		<section class="create-todo">
+			<h3>create todo</h3>
+			<form id="new-todo-form">
+				<h4>Whats on ur todo?</h4>
+				<input 
+					type="text" 
+					placeholder="myb download rdr2? :)"
+					name="content"
+					id="content" />
+				
+				<h4>category :</h4>
+				<div class="options">
+					<label>
+						<input type="radio" name="category" id="category1" value="Default" /> 
+						<span class="bubble default"></span>
+						<div>Default</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="favorite" />
+						<span class="bubble favorite"></span>
+						<div>favorite</div>
+					</label>
+				</div>
+
+				<input type="submit" value="Add todo" />
+			</form>
+		</section>
+		<section class="todo-list">
+			<h3>todo list</h3>
+			<div class="list" id="todo-list"></div>
+		</section>
+	</main>
+
+</body>
+</html>
